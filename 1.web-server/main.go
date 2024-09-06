@@ -45,6 +45,5 @@ func formHandler(w http.ResponseWriter, r *http.Request) {
 	email := r.FormValue("email")
 	tel := r.FormValue("tel")
 
-	log.Printf("Form name=%s email=%s tel=%s\n", name, email, tel)
 	fmt.Fprintf(w, "Form name=%s email=%s tel=%s", name, email, tel)
 }
